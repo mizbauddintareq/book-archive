@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Internal Css -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Starts Main Section -->
+    <main class="container">
+
+        <!-- Starts Search Box & Button Section -->
+        <section>
+            <h1 class="fw-bold text-center text-success">Search Your Favorite Book To Read</h1>
+            <div class="input-group mb-3 w-75 mx-auto">
+                <input id="search-box" type="text" class="form-control" placeholder="Enter Book Name"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="getBookDetails()" class="btn btn-outline-secondary" type="button"
+                    id="search-btn">Search</button>
+            </div>
+        </section>
+        <!-- Ends Search Box & Button Section -->
+
+        <!-- Starts Total Results Count Section -->
+        <div id="total-results">
+            
+        </div>
+        <!-- Starts Total Results Count Section -->
+
+        <!-- Starts Search Result Section -->
+        <section>
+            <div id="result-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+        </section>
+        <!-- Ends Search Result Section -->
+
+    </main>
+    <!-- Ends Main Section -->
+
+    <!-- Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- Main JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
