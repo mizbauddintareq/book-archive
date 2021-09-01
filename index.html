@@ -18,6 +18,11 @@
         body {
             font-family: 'Montserrat', sans-serif;
         }
+
+        #spinner {
+            display: none;
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -36,21 +41,29 @@
                     id="search-btn">Search</button>
             </div>
         </section>
+
+        <!-- Starts Spinner -->
+        <div id="spinner" class="spinner-border" role="status">
+
+        </div>
+        <!-- Ends Spinner -->
+
         <!-- Ends Search Box & Button Section -->
 
-        <!-- Starts Total Results Count Section -->
-        <div id="total-results">
-            
-        </div>
-        <!-- Starts Total Results Count Section -->
+        <section id="results">
 
-        <!-- Starts Search Result Section -->
-        <section>
+            <!-- Starts Total Results Count Section -->
+            <div id="total-results">
+
+            </div>
+            <!-- Starts Total Results Count Section -->
+
+            <!-- Starts Search Result Section -->
             <div id="result-container" class="row row-cols-1 row-cols-md-3 g-4">
 
             </div>
+            <!-- Ends Search Result Section -->
         </section>
-        <!-- Ends Search Result Section -->
 
     </main>
     <!-- Ends Main Section -->

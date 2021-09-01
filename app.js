@@ -1,8 +1,19 @@
+// spinner and toggle
+const toggleSpinner = displayStyle => {
+    document.getElementById('spinner').style.display = displayStyle;
+};
+const toggleSearchResult = displayStyle => {
+    document.getElementById('results').style.display = displayStyle;
+};
+
 // get data by using api
 const getBookDetails = () => {
     const searchInput = document.getElementById('search-box');
     const searchValue = searchInput.value;
     searchInput.value = '';
+
+    toggleSpinner('block');
+    toggleSearchResult('none');
 
     const url = `https://openlibrary.org/search.json?q=${searchValue}`;
     fetch(url)
@@ -37,6 +48,8 @@ const displayBookDetails = details => {
             </div>
         `;
         resultContainer.appendChild(col);
+        toggleSpinner('none');
+        toggleSearchResult('block');
     })
 };
 
