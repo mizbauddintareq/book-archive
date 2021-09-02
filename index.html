@@ -33,25 +33,30 @@
 
         <!-- Starts Search Box & Button Section -->
         <section>
-            <h1 class="fw-bold text-center text-success">Search Your Favorite Book To Read</h1>
-            <div class="input-group mb-3 w-75 mx-auto">
+            <h1 class="fw-bold text-center text-white bg-dark">Search Your Favorite Book To Read</h1>
+            <div class="input-group my-3 w-75 mx-auto">
                 <input id="search-box" type="text" class="form-control" placeholder="Enter Book Name"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button onclick="getBookDetails()" class="btn btn-outline-secondary" type="button"
+                <button onclick="getBookDetails()" class="btn btn-outline-secondary text-white bg-dark" type="button"
                     id="search-btn">Search</button>
             </div>
         </section>
+        <!-- Ends Search Box & Button Section -->
+
+        <!-- Starts Error Message -->
+        <div id="error-text">
+
+        </div>
+        <!-- Ends Error Message -->
 
         <!-- Starts Spinner -->
-        <div id="spinner" class="spinner-border" role="status">
+        <div id="spinner" class="spinner-border text-dark text-center" style="width: 3rem; height: 3rem;" role="status">
 
         </div>
         <!-- Ends Spinner -->
 
-        <!-- Ends Search Box & Button Section -->
-
+        <!-- starts search container -->
         <section id="results">
-
             <!-- Starts Total Results Count Section -->
             <div id="total-results">
 
@@ -64,7 +69,7 @@
             </div>
             <!-- Ends Search Result Section -->
         </section>
-
+        <!-- Ends search container -->
     </main>
     <!-- Ends Main Section -->
 
